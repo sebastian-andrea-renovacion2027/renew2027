@@ -1,0 +1,873 @@
+/* =====================================================
+   RENEW 2027
+   Archivo : style.css
+   Versión : v1.0
+===================================================== */
+
+
+
+/* =====================================================
+   BLOQUE 01
+   RESET
+===================================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+*,
+*::before,
+*::after{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+
+img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+
+
+picture{
+
+    display:block;
+
+}
+
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font:inherit;
+
+}
+
+
+
+input,
+textarea,
+select{
+
+    font:inherit;
+
+    outline:none;
+
+    border:none;
+
+}
+
+
+
+table{
+
+    border-collapse:collapse;
+
+    border-spacing:0;
+
+}
+/* =====================================================
+   BLOQUE 02
+   BODY
+===================================================== */
+
+html{
+
+    font-size:16px;
+
+}
+
+
+
+body{
+
+    font-family:var(--font-text);
+
+    font-size:var(--fs-body);
+
+    font-weight:var(--fw-regular);
+
+    color:var(--text);
+
+    background:var(--background);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+    text-rendering:optimizeLegibility;
+
+}
+
+
+
+/* =====================================================
+   SELECCIÓN
+===================================================== */
+
+::selection{
+
+    background:var(--gold);
+
+    color:var(--white);
+
+}
+
+
+
+/* =====================================================
+   SCROLL
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+
+::-webkit-scrollbar-track{
+
+    background:var(--background);
+
+}
+
+
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--gold);
+
+    border-radius:999px;
+
+}
+
+
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--gold-dark);
+
+}
+/* =====================================================
+   BLOQUE 03
+   HERO
+===================================================== */
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    background-image:url("../assets/originals/portada.jpg");
+
+    background-size:cover;
+
+    background-position:center center;
+
+    background-repeat:no-repeat;
+
+}
+
+
+
+/* =====================================================
+   HERO - CAPA BASE
+===================================================== */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:transparent;
+
+    z-index:1;
+
+}
+
+
+
+/* =====================================================
+   CONTENIDO DEL HERO
+===================================================== */
+
+.hero>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+/* =====================================================
+   BLOQUE 03A
+   HERO + OVERLAY + WRAPPER + CONTAINER
+===================================================== */
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    background-image:url("../assets/originals/portada.jpg");
+
+    background-size:cover;
+
+    background-position:center center;
+
+    background-repeat:no-repeat;
+
+}
+
+
+
+/* =====================================================
+   OVERLAY
+===================================================== */
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,.72) 0%,
+        rgba(0,0,0,.58) 22%,
+        rgba(0,0,0,.35) 45%,
+        rgba(0,0,0,.08) 100%
+    );
+
+    z-index:1;
+
+}
+
+
+
+/* =====================================================
+   WRAPPER
+===================================================== */
+
+.hero-wrapper{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    padding-left:2%;
+
+    padding-top:40px;
+
+    padding-bottom:40px;
+
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.hero-container{
+
+    width:520px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    left:-20px;
+
+}
+/* =====================================================
+   BLOQUE 03B
+   PAREJA
+===================================================== */
+
+.hero-couple{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* =====================================================
+   PERSONA
+===================================================== */
+
+.hero-person{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+/* =====================================================
+   NOMBRE
+===================================================== */
+
+.hero-first-name{
+
+    font-family:var(--font-title);
+
+    font-size:50px;
+
+    font-weight:300;
+
+    line-height:1;
+
+    letter-spacing:1px;
+
+    color:var(--white);
+
+    margin:0;
+
+}
+
+
+
+/* =====================================================
+   APELLIDO
+===================================================== */
+
+.hero-last-name{
+
+    margin-top:12px;
+
+    font-family:var(--font-text);
+
+     font-size:14px;
+
+    font-weight:400;
+
+     letter-spacing:6px;
+
+    color:var(--white);
+
+    text-transform:uppercase;
+
+}
+
+
+
+/* =====================================================
+   SEPARADOR
+===================================================== */
+
+.hero-divider{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:28px;
+
+    margin:28px 0;
+
+}
+
+
+
+/* =====================================================
+   LÍNEAS
+===================================================== */
+
+.divider-line{
+
+    width:140px;
+
+    height:1px;
+
+    background:var(--gold);
+
+    opacity:.9;
+
+}
+
+
+
+/* =====================================================
+   AMPERSAND
+===================================================== */
+
+.divider-ampersand{
+
+    font-family:var(--font-title);
+
+    font-size:35px;
+
+    font-weight:300;
+
+    color:var(--white);
+
+    line-height:1;
+
+}
+/* =====================================================
+BLOQUE 03C
+CONTENIDO DEL HERO
+Versión: v1.0
+===================================================== */
+
+/* ==========================================
+   RAMA DE OLIVO
+========================================== */
+
+/* ==========================================
+   RAMA DE OLIVO
+========================================== */
+
+/* ==========================================
+   RAMA DE OLIVO
+========================================== */
+
+/* ==========================================
+   RAMA DE OLIVO
+========================================== */
+
+/* ==========================================
+   RAMA DE OLIVO
+========================================== */
+
+.hero-olive{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+    position:relative;
+
+    top:-35px;
+
+    left:0;
+
+    margin-bottom:-10px;
+
+    z-index:3;
+
+}
+
+.hero-olive img{
+
+    width:140px;
+
+    height:auto;
+
+    display:block;
+
+    object-fit:contain;
+
+    filter:
+    drop-shadow(0 0 1px rgba(255,255,255,.90))
+    drop-shadow(0 0 2px rgba(255,255,255,.60))
+    drop-shadow(0 0 2px rgba(0,0,0,.60))
+    brightness(0)
+    invert(1);
+
+    opacity:.90;
+
+    user-select:none;
+
+    pointer-events:none;
+
+}
+
+
+/* ==========================================
+   TÍTULO
+========================================== */
+
+.hero-title{
+
+    font-family: var(--font-text);
+
+    font-size:20px;
+
+    font-weight:500;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:var(--gold);
+
+    text-align:center;
+
+    margin-bottom:10px;
+    
+    position:relative;
+
+    top:-30px;
+
+
+}
+
+
+
+/* ==========================================
+   DIVISOR
+========================================== */
+
+.hero-title-divider{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:12px;
+
+    position:relative;
+    
+    top:-45px;
+
+    
+
+}
+
+.hero-title-divider span{
+
+    width:62px;
+
+    height:1px;
+
+    background:rgba(184,155,99,.65);
+
+}
+
+.hero-title-divider i{
+
+    font-style:normal;
+
+    color:var(--gold);
+
+    font-size:.60rem;
+
+}
+
+
+
+/* ==========================================
+   FRASE
+========================================== */
+
+.hero-quote{
+
+    position:relative;
+
+    top:-45px;
+
+    max-width:460px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-family:var(--font-text);
+
+    font-size:15px;
+
+    line-height:1.35;
+
+    color:var(--white);
+
+}
+
+
+
+/* ==========================================
+   CORAZÓN
+========================================== */
+
+.hero-heart{
+
+    text-align:center;
+
+    color:var(--gold);
+
+    font-size:1rem;
+
+    margin:10px 0;
+   
+    position:relative;
+
+    top:-55px;
+
+}
+
+
+
+/* ==========================================
+   INVITACIÓN
+========================================== */
+
+.hero-invitation{
+
+    max-width:390px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-family:var(--font-text);
+
+    font-size:15px;
+
+    line-height:1.35;
+
+    color:var(--white);
+
+    position:relative;
+
+    top:-65px;
+
+}
+
+
+
+/* ==========================================
+   FECHA
+========================================== */
+
+.hero-bottom-date{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:60px;
+
+    font-family:var(--font-title);
+
+    font-size:21px;
+
+    letter-spacing:5px;
+
+    color:var(--gold);
+
+    position:relative;
+
+    top:-105px;
+
+    text-shadow:0 0 6px rgba(184,155,99,.25);
+
+}
+
+
+
+/* ==========================================
+   DIVISOR INFERIOR
+========================================== */
+
+.hero-bottom-divider{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-top:20px;
+
+    position:relative;
+
+    top:-125px;
+
+}
+
+.hero-bottom-divider span{
+
+    width:90px;
+
+    height:1px;
+
+    background:rgba(184,155,99,.65);
+
+}
+
+.hero-bottom-divider i{
+
+    font-style:normal;
+
+    color:var(--gold);
+
+    font-size:.90rem;
+
+}
+/* =====================================================
+   SCROLL INDICATOR
+===================================================== */
+
+.scroll-indicator{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    top:-105px;
+
+    z-index:20;
+
+}
+
+.scroll-indicator img{
+
+    width:26px;
+
+    height:auto;
+
+    display:block;
+
+}
+/* =====================================================
+   AJUSTE MÓVIL — POSICIÓN DEL HERO
+===================================================== */
+
+@media (max-width:700px){
+
+    .hero-container{
+        top:30px;
+        left:0;
+    }
+
+}

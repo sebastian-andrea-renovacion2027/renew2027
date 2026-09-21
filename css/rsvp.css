@@ -1,0 +1,204 @@
+/* =====================================================
+   RSVP — CONFIRMACIÓN DE ASISTENCIA
+   ===================================================== */
+
+.rsvp-section {
+    width: 100%;
+    margin: 0;
+    padding: 40px 20px 45px;
+    background: var(--color-background, #f5f2ec);
+    box-sizing: border-box;
+}
+
+.rsvp-container {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Título pequeño */
+
+.rsvp-kicker {
+    margin: 0 0 14px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #8d794d;
+}
+
+/* Título principal */
+
+.rsvp-title {
+    margin: 0 0 45px;
+    font-family: var(--font-title);
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #3f4735;
+}
+
+/* Formulario */
+
+.rsvp-form {
+    width: 100%;
+    text-align: left;
+}
+
+/* Grupo */
+
+.rsvp-field {
+    margin-bottom: 25px;
+}
+
+.rsvp-field label {
+    display: block;
+    margin-bottom: 9px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #4b5145;
+}
+
+/* Inputs */
+
+.rsvp-field input,
+.rsvp-field select,
+.rsvp-field textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(63, 71, 53, 0.28);
+    border-radius: 0;
+
+    padding: 13px 14px;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #3f4735;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.rsvp-field input:focus,
+.rsvp-field select:focus,
+.rsvp-field textarea:focus {
+    border-color: #8d794d;
+    background: #ffffff;
+}
+
+/* Textarea */
+
+.rsvp-field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Acompañantes */
+
+.rsvp-companions {
+    display: none;
+}
+
+/* Mostrar acompañantes */
+
+.rsvp-companions.visible {
+    display: block;
+}
+
+/* Botón */
+
+.rsvp-button {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 38px;
+    padding: 16px 25px;
+
+    border: 1px solid #3f4735;
+
+    background: #3f4735;
+    color: #ffffff;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.rsvp-button:hover {
+    background: transparent;
+    color: #3f4735;
+}
+
+/* Estado mientras envía */
+
+.rsvp-button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+/* Mensaje */
+
+.rsvp-message {
+    margin: 25px 0 0;
+
+    font-family: var(--font-title);
+    font-size: 21px;
+    line-height: 1.4;
+
+    text-align: center;
+
+    color: #3f4735;
+
+    display: none;
+}
+
+.rsvp-message.visible {
+    display: block;
+}
+
+/* Error */
+
+.rsvp-message.error {
+    color: #8a4b43;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .rsvp-section {
+        padding: 65px 20px 75px;
+    }
+
+    .rsvp-title {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    .rsvp-field {
+        margin-bottom: 21px;
+    }
+
+}

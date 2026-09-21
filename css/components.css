@@ -1,0 +1,189 @@
+/* =====================================================
+   RENEW 2027
+   COMPONENTS.CSS
+   VERSION 1.0
+===================================================== */
+
+/*==================================================
+BOTÓN PRINCIPAL
+==================================================*/
+
+.btn-primary{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:18px 42px;
+
+    border:1px solid var(--color-primary);
+
+    border-radius:999px;
+
+    background:rgba(184,155,99,.18);
+
+    backdrop-filter:blur(12px);
+
+    color:var(--color-white);
+
+    font-family:var(--font-text);
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    transition:all .35s ease;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--color-primary);
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+/*==================================================
+LÍNEA DORADA
+==================================================*/
+
+.section-line{
+
+    width:90px;
+
+    height:2px;
+
+    margin:30px auto;
+
+    background:var(--color-primary);
+
+}
+
+/*==================================================
+TÍTULO DE SECCIÓN
+==================================================*/
+
+.section-title{
+
+    font-family:var(--font-title);
+
+    font-size:var(--fs-h2);
+
+    color:var(--color-text);
+
+    text-align:center;
+
+    font-weight:400;
+
+    margin-bottom:20px;
+
+}
+
+/*==================================================
+SUBTÍTULO
+==================================================*/
+
+.section-subtitle{
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:var(--color-text-light);
+
+    line-height:1.9;
+
+}
+
+/*==================================================
+CARD
+==================================================*/
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/*==================================================
+INPUTS
+==================================================*/
+
+.input{
+
+    width:100%;
+
+    padding:18px 20px;
+
+    border:1px solid var(--color-border);
+
+    border-radius:12px;
+
+    outline:none;
+
+    transition:.3s;
+
+    font-family:var(--font-text);
+
+}
+
+.input:focus{
+
+    border-color:var(--color-primary);
+
+}
+
+/*==================================================
+LABEL
+==================================================*/
+
+.label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+    color:var(--color-text);
+
+}
+
+/*==================================================
+ESPACIADO GENERAL
+==================================================*/
+
+.mt-1{margin-top:1rem;}
+
+.mt-2{margin-top:2rem;}
+
+.mt-3{margin-top:3rem;}
+
+.mb-1{margin-bottom:1rem;}
+
+.mb-2{margin-bottom:2rem;}
+
+.mb-3{margin-bottom:3rem;}
+
+.text-center{
+
+    text-align:center;
+
+}

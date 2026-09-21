@@ -1,0 +1,377 @@
+/* =====================================================
+   LUGAR
+===================================================== */
+
+.location-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--color-background, #f5f2ec);
+    box-sizing: border-box;
+}
+
+.location-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+/* =====================================================
+   FOTOGRAFÍA
+===================================================== */
+
+.location-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =====================================================
+   VIÑETA SOBRE LA FOTOGRAFÍA
+===================================================== */
+
+.location-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(0, 0, 0, 0) 38%,
+            rgba(0, 0, 0, 0.08) 55%,
+            rgba(0, 0, 0, 0.22) 72%,
+            rgba(0, 0, 0, 0.48) 100%
+        ),
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.52) 0%,
+            rgba(0, 0, 0, 0.22) 18%,
+            rgba(0, 0, 0, 0) 40%,
+            rgba(0, 0, 0, 0) 72%,
+            rgba(0, 0, 0, 0.18) 90%,
+            rgba(0, 0, 0, 0.42) 100%
+        ),
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.28) 0%,
+            rgba(0, 0, 0, 0) 18%,
+            rgba(0, 0, 0, 0) 82%,
+            rgba(0, 0, 0, 0.35) 100%
+        );
+
+    z-index: 1;
+}
+
+.location-map {
+    display: block;
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+}
+
+/* =====================================================
+   INFORMACIÓN SOBRE LA FOTO
+===================================================== */
+
+.location-overlay {
+    position: absolute;
+
+    top: 46%;
+    left: 7%;
+
+    transform: translateY(-50%);
+
+    width: min(520px, 42%);
+
+    padding: 20px 25px;
+
+    box-sizing: border-box;
+
+    background: transparent;
+
+    text-align: left;
+
+     z-index: 2;
+}
+
+/* =====================================================
+   LUGAR
+===================================================== */
+
+.location-kicker {
+    margin: 0 0 18px;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 500;
+
+    letter-spacing: 5px;
+
+    color: #ffffff;
+
+    text-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
+}
+
+.location-title {
+    margin: 0;
+
+    font-family: var(--font-title);
+    font-size: 46px;
+    font-weight: 400;
+
+    line-height: 1.15;
+
+    color: #ffffff;
+
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+.location-venue {
+    margin: 10px 0 34px;
+
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+    color: #ffffff;
+
+    text-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
+}
+
+/* =====================================================
+   FECHA Y HORA
+===================================================== */
+
+.location-date {
+    margin: 0 0 10px;
+
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    color: #ffffff;
+
+    text-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
+}
+
+.location-time {
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: 17px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    color: #ffffff;
+
+    text-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
+}
+
+/* =====================================================
+   BOTÓN CÓMO LLEGAR
+===================================================== */
+
+.location-button {
+    display: inline-block;
+
+    position: relative;
+    z-index: 3;
+
+    margin-top: 34px;
+    padding: 17px 34px;
+
+    border: 1px solid rgba(141, 121, 77, 0.75);
+
+    background: rgba(245, 242, 236, 0.86);
+    color: #3f4735;
+
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+
+.location-button:hover {
+    background: rgba(245, 242, 236, 0.95);
+    border-color: #f5f2ec;
+    color: #3f4735;
+}
+
+/* =====================================================
+   TEMPERATURA
+===================================================== */
+
+.location-temperature {
+    margin-top: 40px;
+    padding-top: 28px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.location-temperature-title {
+    margin: 0 0 22px;
+
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: #ffffff;
+
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.location-temperature-values {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 55px;
+    width: 100%;
+}
+
+.location-temperature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 0 auto;
+}
+
+.location-temperature-time {
+    margin-bottom: 7px;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+
+    color: #ffffff;
+
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.location-temperature-value {
+    font-family: var(--font-title);
+    font-size: 25px;
+    font-weight: 400;
+
+    color: #ffffff;
+
+    text-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
+}
+
+.location-temperature-note {
+    max-width: 360px;
+
+    margin: 18px 0 0;
+
+    font-family: var(--font-body);
+    font-size: 11px;
+    line-height: 1.5;
+
+    color: #ffffff;
+
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .location-map {
+        height: 760px;
+    }
+
+    .location-overlay {
+        width: calc(100% - 40px);
+
+        left: 20px;
+        top: 49%;
+
+        transform: translateY(-50%);
+
+        padding: 20px 15px;
+
+        text-align: center;
+    }
+
+    .location-kicker {
+        text-align: center;
+    }
+
+    .location-title {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .location-venue {
+        margin-bottom: 38px;
+        text-align: center;
+    }
+
+    .location-date {
+        text-align: center;
+    }
+
+    .location-time {
+        text-align: center;
+    }
+
+    .location-button {
+        margin-top: 28px;
+    }
+
+    .location-temperature {
+        margin-top: 40px;
+        padding-top: 22px;
+    }
+
+    .location-temperature-title {
+        text-align: center;
+    }
+
+    .location-temperature-values {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .location-temperature-item {
+        align-items: center;
+        text-align: center;
+    }
+
+    .location-temperature-value {
+        font-size: 23px;
+    }
+
+    .location-temperature-note {
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+}

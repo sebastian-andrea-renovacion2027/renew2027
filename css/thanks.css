@@ -126,6 +126,7 @@
     .thanks-names {
         font-size: 26px;
         margin-top: 24px;
+        transform: translateY(-35px);
     }
 
 }
